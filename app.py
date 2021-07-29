@@ -10,7 +10,7 @@ table_name = 'waiters'
 api_key="key5zzo3pttC12yCF"
 endpoint=f'https://api.airtable.com/v0/{base_key}/{table_name}'
 
-def writeairtable(name, email):
+def writeairtable(name, email, email_subscription, resident):
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
@@ -21,7 +21,9 @@ def writeairtable(name, email):
             "fields": {
                 "Full Name": name,
                 "Email": email,
-                "Status": "Subscribed"
+                "Subscription": email_subscription,
+                "Residency": resident,
+                "Launch": "Subscribed"
                 }
             }
         ]
@@ -46,8 +48,10 @@ def register():
         if result.get("name") != "" and result.get("email") != "":
             name = result.get("name")
             email = result.get("email")
+            email_subscription = result.get("subscribe")
+            resident = result.get("resident")
             try:
-                writeairtable(name, email)
+                writeairtable(name, email, email_subscription, resident)
                 return render_template("success.html"), {"Refresh": "3; url=/"}
             except:
                 return render_template("error.html"), {"Refresh": "15; url=/"}
