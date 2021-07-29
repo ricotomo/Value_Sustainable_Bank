@@ -7425,6 +7425,31 @@ textarea.form-control-lg {
   color: inherit !important;
 }
 
+.form-switch .form-check-input:checked~.form-check-label::before{
+  border-color: var(--bs-primary) !important;
+  background-color: var(--bs-primary-lighten) !important;
+}
+
+.form-check-input:focus~.form-check-label::before{
+  border-color: var(--bs-primary) !important;
+  background-color: var(--bs-primary-lighten) !important;
+}
+
+.form-check-input:active~.form-check-label::before{
+  border-color: var(--bs-primary) !important;
+  background-color: var(--bs-primary-lighten) !important;
+}
+
+.form-check-input:focus:not(:checked)~.form-check-label::before{
+  border-color: var(--bs-primary) !important;
+}
+
+.form-check-input-green:not(:disabled):active~.form-check-label::before{
+  border-color: var(--bs-primary) !important;
+  background-color: var(--bs-primary-lighten) !important;
+}
+
+
 .bg-primary {
   background-color: #2937f0 !important;
 }

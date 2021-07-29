@@ -48,11 +48,11 @@ def register():
             email = result.get("email")
             try:
                 writeairtable(name, email)
-                return render_template("success.html")
+                return render_template("success.html"), {"Refresh": "3; url=/"}
             except:
-                return render_template("error.html")
+                return render_template("error.html"), {"Refresh": "15; url=/"}
         else:
-            return render_template("error.html")
+            return render_template("error.html"), {"Refresh": "15; url=/"}
 
 if __name__ == '__main__':
     app.run()
