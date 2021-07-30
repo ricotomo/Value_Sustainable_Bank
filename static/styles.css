@@ -4025,6 +4025,10 @@ textarea.form-control-lg {
   align-items: center;
 }
 
+.primary-green-text {
+  color: var(--bs-primary)
+}
+
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -4034,6 +4038,11 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
+
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
@@ -4237,13 +4246,13 @@ textarea.form-control-lg {
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
+/* .navbar-light .navbar-toggler {
+  color: var(--bs-primary);
   border-color: rgba(0, 0, 0, 0.1);
-}
-.navbar-light .navbar-toggler-icon {
+} */
+/* .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+} */
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.55);
 }
@@ -7425,7 +7434,7 @@ textarea.form-control-lg {
   color: inherit !important;
 }
 
-.form-switch .form-check-input:checked~.form-check-label::before{
+/* .form-switch .form-check-input:checked~.form-check-label::before{
   border-color: var(--bs-primary) !important;
   background-color: var(--bs-primary-lighten) !important;
 }
@@ -7447,7 +7456,7 @@ textarea.form-control-lg {
 .form-check-input-green:not(:disabled):active~.form-check-label::before{
   border-color: var(--bs-primary) !important;
   background-color: var(--bs-primary-lighten) !important;
-}
+} */
 
 
 .bg-primary {
@@ -10904,7 +10913,13 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, --bs-primary, --bs-gradient-end) !important;
+  background: linear-gradient(45deg, #16CEC7, #79ECE9) !important;
+}
+
+.bg-gradient-primary-to-secondary-banner {
+  
+  background: linear-gradient(to right, var(--bs-primary), var(--bs-primary-lighten));      /* W3C */
+
 }
 
 .font-alt {
@@ -10912,7 +10927,8 @@ html {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(--bs-primary, --bs-gradient-end);
+  background: var(--bs-secondary);
+  /* -webkit-linear-gradient(#16CEC7, #79ECE9); */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -10943,10 +10959,11 @@ section {
   color: var(--bs-secondary);
 }
 #mainNav .navbar-toggler {
-  font-size: 0.875rem;
+  font-size: 2rem;
   padding: 0.75rem 1rem;
-  color: #212529;
+  color: var(--bs-primary);
 }
+
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #212529;
 }
@@ -11246,3 +11263,7 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+
+.fa-1x {
+  font-size: 1.5rem;
+  }
