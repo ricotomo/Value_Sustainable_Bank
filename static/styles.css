@@ -10936,8 +10936,8 @@ html {
 
 aside,
 section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .app-badge {
@@ -11109,6 +11109,70 @@ section.cta:before {
 }
 .features-device-mockup .device-wrapper {
   max-width: 10rem;
+}
+
+#banks{
+  padding-top: 2rem !important;
+}
+
+#banks .logos{
+    width:auto;
+    height:80px;
+    object-fit:cover;
+    border-radius:95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#climate-change-pics{
+  width:auto;
+  height:30vh;
+  display: block;
+  margin-left: none;
+  margin-right: auto;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+#climate-change-pics-row{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+@media (max-width: 768px) {
+  #banks-description{
+    display: none !important;
+  }
+  #banks-explanation{
+    text-align: center !important;
+  }
+  #climate-change-pics{
+    border-radius: 10px 10px 10px 10px;
+  }
+  #banks .logos{
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #banks-description{
+    display: block !important;
+  }
+}
+
+.right-rounded{
+  border-radius: 0px 10px 10px 0px
+}
+
+.left-rounded{
+  border-radius: 10px 0px 0px 10px
+}
+
+.glow-effect{
+    filter: drop-shadow(0 0 0.5rem rgb(121, 236, 233));
 }
 
 @media (min-width: 576px) {
