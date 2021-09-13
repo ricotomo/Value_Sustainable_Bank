@@ -10947,6 +10947,10 @@ section {
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 
+.grayscale{
+    filter: invert(1) grayscale(100);
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
