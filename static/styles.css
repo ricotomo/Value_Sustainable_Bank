@@ -11114,6 +11114,7 @@ section.mission:before {
 .features-device-mockup .device-wrapper {
   max-width: 10rem;
 }
+/* banks & climate chaange feature */
 
 #banks{
   padding-top: 2rem !important;
@@ -11168,15 +11169,27 @@ section.mission:before {
 }
 
 .right-rounded{
-  border-radius: 0px 10px 10px 0px
+  border-radius: 0px 10px 10px 0px;
 }
 
 .left-rounded{
-  border-radius: 10px 0px 0px 10px
+  border-radius: 10px 0px 0px 10px;
+}
+
+.top-rounded{
+  border-radius: 10px 10px 0px 0px
 }
 
 .glow-effect{
     filter: drop-shadow(0 0 0.5rem rgb(121, 236, 233));
+}
+
+/*Tiers & services feature*/
+.services-pic{
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  height: 25vh;
 }
 
 @media (min-width: 576px) {
