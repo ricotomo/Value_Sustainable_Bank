@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
- @font-face {
+@font-face {
   font-family: 'omegleregular';
     src: url('fonts/omegle-webfont.woff2'), url('fonts/omegle-webfont.woff'), url('fonts/OMEGLE.ttf');
     font-weight: normal;
@@ -11155,7 +11155,7 @@ section.mission:before {
     text-align: center !important;
   }
   #climate-change-pics{
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 0px 0px;
   }
   #banks .logos{
     margin-top: 1rem;
@@ -11409,4 +11409,44 @@ footer a:hover, footer a:active, footer a:focus {
   30% { opacity: 0; -ms-transform: translateY(-50px); }
   80% { opacity: 0; }
   100% { opacity: 0; }
+}
+
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+#last {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 0px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
 }

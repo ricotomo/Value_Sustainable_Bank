@@ -43,7 +43,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{{ url_for('static', filename='styles.css')}}" rel="stylesheet" />
+        <link rel="stylesheet" href="/static/styles.css"/>
 
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
@@ -200,29 +200,51 @@
         <!-- https://www.renderforest.com/subscription -->
         <section id="services">
             <div class="container px-5">
-                <div class="row gx-5 align-items-center">Our Services</div>
-                <div class="row gx-5 align-items-center">
-                    <div class="col-md-4 col-sm-12 mb-5 mb-lg-0 border">
-                        <!-- card here -->
-                        <!--free-->
+                <h2 class="text-center">Our Services</h2>
+                <p class="text-center mb-5">Choose the plan that best fits your values.</p>
+                <div class="row gx-5 align-items-top">
+                <div class="col-md-4 col-sm-12 mb-5 mb-lg-0">
+                    <ul class="price">
                         <div class="services-pic">
-                            <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/Sapling.PNG')}}" alt="Image for first plan">
+                            <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/sapling.png')}}" alt="Sapling">
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 mb-5 mb-lg-0 border">
-                        <!-- devest plan here -->
-                        <!--$2 a month-->
+                        <li class="header" style="background-color: #16CEC7">Free</li>
+                        <li class="grey">$ 0 / month</li>
+                        <li>A credit card that supports your values, every time you spend</li>
+                        <li>Option to round-up for even more impact</li>
+                        <li>Build credit, with smart payments to help boost your score</li>
+                        <li>Link your other banks to calculate a carbon footprint</li>
+                        <li>No hidden fees</li>
+                        <li id="last"> <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">Join the waitlist</button></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-5 mb-lg-0">
+                    <ul class="price">
                         <div class="services-pic">
-                            <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/Tree.PNG')}}" alt="Image for second plan">
+                            <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/tree.png')}}" alt="Tree">
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 mb-5 mb-lg-0 border">
-                        <!-- impact plan here -->
-                        <!--$15 a month-->
+                        <li class="header"">Divest</li>
+                        <li class="grey">$ 2 / month</li>
+                        <li>Includes everything from Free</li>
+                        <li>A bank account that doesn't fund fossil fuels</li>
+                        <li>Green Savings, Green Checking, Green Retirement</li>
+                        <li id="last" style="background-color: gray; color: white;">Coming Mar 2022</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-12 mb-5 mb-lg-0">
+                    <ul class="price">
                         <div class="services-pic">
-                            <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/Forest.PNG')}}" alt="Image for third plan">
+                            <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/forest.png')}}" alt="Forest">
                         </div>
-                    </div>
+                        <li class="header">Impact</li>
+                        <li class="grey">$ 15 / month</li>
+                        <li>Includes everything from Divest</li>
+                        <li>Access to more high-impact projects</li>
+                        <li>Choose exactly what your money supports</li>
+                        <li id="last" style="background-color: gray; color: white;">Coming May 2022</li>
+                    </ul>
+                </div>
                 </div>
             </div>
         </section>
