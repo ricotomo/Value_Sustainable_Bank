@@ -11000,6 +11000,7 @@ section {
 .card-wrapper {
   max-width: 600px;
   width: 100%;
+  z-index: 999;
 }
 
 .device-wrapper {
