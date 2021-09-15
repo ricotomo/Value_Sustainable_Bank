@@ -95,7 +95,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: var(--bs-standard-font), "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -331,6 +331,17 @@ button {
 button:focus:not(:focus-visible) {
   outline: 0;
 }
+.btn-learn-more{
+  color: #ffff !important;
+  background-color:var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.btn-learn-more:hover {
+  color: #ffff !important;
+  background-color:var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+}
 
 input,
 button,
@@ -481,7 +492,7 @@ progress {
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -11059,9 +11070,11 @@ section {
 section.mission {
   position: relative;
   padding: 7rem 0;
-  background-image:  url("img/overlay-black-60opacity.png"), url("https://source.unsplash.com/oMneOBYhJxY/1500x600");
+  background-image:  url("img/overlay-black-60opacity.png"), url("https://source.unsplash.com/oMneOBYhJxY/1500x800");
   background-position: center;
   background-size: cover;
+  width:100%;
+  height:auto;
 }
 section.mission  .mission-content {
   position: relative;
@@ -11121,6 +11134,10 @@ section.mission:before {
   max-width: 10rem;
 }
 /* banks & climate chaange feature */
+#banks{
+  background-color: #f8f9fa;
+  padding-top: 0px !important;
+}
 
 #banks .logos{
     width:auto;
@@ -11134,7 +11151,7 @@ section.mission:before {
 
 #climate-change-pics{
   width:auto;
-  height:30vh;
+  height:100%;
   display: block;
   margin-left: none;
   margin-right: auto;
@@ -11148,6 +11165,16 @@ section.mission:before {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
+#banks-explanation{
+border: 1px solid #eee !important;
+-webkit-transition: 0.3s;
+transition: 0.3s;
+}
+
+#banks-explanation:hover{
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
 
 @media (max-width: 768px) {
   #banks-description{
@@ -11155,9 +11182,14 @@ section.mission:before {
   }
   #banks-explanation{
     text-align: center !important;
+    border: none !important;
+  }
+  #banks-explanation:hover{
+    box-shadow: none;
   }
   #climate-change-pics{
-    border-radius: 20px 20px 0px 0px;
+    height:30vh;
+    border-radius: 0.25rem !important;
   }
   #banks .logos{
     margin-top: 1rem;
