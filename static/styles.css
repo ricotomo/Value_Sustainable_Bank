@@ -10927,8 +10927,7 @@ html {
 }
 
 .text-gradient {
-  background: var(--bs-secondary);
-  /* -webkit-linear-gradient(#16CEC7, #79ECE9); */
+  background: -webkit-linear-gradient(var(--bs-primary), var(--bs-primary-lighten));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -11177,7 +11176,7 @@ section.mission:before {
 }
 
 .top-rounded{
-  border-radius: 10px 10px 0px 0px
+  border-radius: 10px 10px 0px 0px;
 }
 
 .glow-effect{

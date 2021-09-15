@@ -43,7 +43,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link rel="stylesheet" href="/static/styles.css"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}>
 
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
@@ -147,6 +147,7 @@
                 </div>
             </div>
         </header>
+        <section id="banks">
         <!-- Quote aside-->
         <aside class="text-center bg-gradient-primary-to-secondary-banner">
             <div class="container px-5">
@@ -159,7 +160,6 @@
             </div>
         </aside>
         <!--Bank Comparison-->
-        <section id="banks">
             <div class="container px-5">
                 <div class="row align-content-center justify-content-center">
                     <div class="hidden-sm-down col-md-1">
@@ -249,7 +249,7 @@
             </div>
         </section>
         <!-- App features section-->
-        <section id="features" hidden>
+        <section id="features">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
@@ -258,20 +258,17 @@
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <!-- <i class="bi bi-pencil-square"></i> -->
-                                        <!-- <i class="bi-phone icon-feature text-gradient d-block mb-3"></i> -->
-                                        <div class="icon-feature d-block mb-3">🌳</div>
-                                        <h3 class="font-alt">Plant Trees</h3>
-                                        <p class="text-muted mb-0">Value plants a tree for every $50 you spend.</p>
+                                        <i class="bi bi-tree-fill icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Fund Green Projects</h3>
+                                        <p class="text-muted mb-0">Choose from among one of five projects that is doing good for the environment. As you spend money the fees we recieve will fund the project.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <!-- <i class="bi-camera icon-feature text-gradient d-block mb-3"></i> -->
-                                        <div class="icon-feature d-block mb-3">🍃</div>
-                                        <h3 class="font-alt">Carbon Offseting</h3>
-                                        <p class="text-muted mb-0">See your Co2 footprint. Offset it per transaction or automatically.</p>
+                                        <i class="bi bi-bank2 icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">All Your Spending, One App</h3>
+                                        <p class="text-muted mb-0">If your a customer of one of Canada's big 5 banks you can add your account to see all your spending in one place.</p>
                                     </div>
                                 </div>
                             </div>
@@ -279,19 +276,17 @@
                                 <div class="col-md-6 mb-5 mb-md-0">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <!-- <i class="bi-gift icon-feature text-gradient d-block mb-3"></i> -->
-                                        <div class="icon-feature d-block mb-3">💸</div>
-                                        <h3 class="font-alt">Sustainable Investments</h3>
-                                        <p class="text-muted mb-0">We invest only in green projects. Choose to opt-out of any investment.</p>
+                                        <i class="bi bi-credit-card-fill icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Build Credit</h3>
+                                        <p class="text-muted mb-0">Have full control over your credit usage. Get notifications for every transaction, set spending limits, directly debiting on paying with your card, and more.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <!-- <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i> -->
-                                        <div class="icon-feature d-block mb-3">📈</div>
-                                        <h3 class="font-alt">Track your Impact</h3>
-                                        <p class="text-muted mb-0">See where your money is being invested and its impact.</p>
+                                        <i class="bi bi-piggy-bank-fill icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Co-sign for Kids</h3>
+                                        <p class="text-muted mb-0">The perfect first credit card for kids. Parents can co-sign without leaving their old bank.</p>
                                     </div>
                                 </div>
                             </div>
@@ -315,26 +310,11 @@
                             <div class="device-wrapper">
                                 <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                                     <div class="screen bg-black">
-                                        <img src="{{ url_for('static', filename='img/features.gif')}}" alt="Features" style="max-width: 100%; height: 100%">
-                                        <!-- <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="{{ url_for('static', filename='img/offset-one-click.gif')}}" type="video/mp4" /></video> -->
+                                        <img src="{{ url_for('static', filename='img/Home-Screen.png')}}" alt="Features" style="max-width: 100%; height: 100%">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Basic features section-->
-        <section class="bg-light" hidden>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
-                    </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
                     </div>
                 </div>
             </div>
@@ -344,7 +324,7 @@
             <div class="mission-content">
                 <div class="container px-5">
                     <h2 class="text-white display-1 lh-1 mb-4">
-                        We're on a Mission.
+                        Our Mission.
                     </h2>
                     <p class="text-white lead lh-base mb-4">
                         We believe that climate change is one of the most pressing issues of our generation. Scientific evidence shows climate change is man-made, accelerating rapidly, and that the time to act is now. The United Nation's has laid out a plan for financing the transition to a carbon neutral economy. However there is an enormous gap between how much has been invested and how much we need to invest. This transition will have the potential to transform the lives of people, the planet and create profit for those who see the future in sustainability. Canada's recognize this and want green financial services. Canada's big banks are failing to act - so we will!
