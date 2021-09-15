@@ -10996,6 +10996,12 @@ section {
  * Licensed under MIT (https://github.com/pixelsign/html5-device-mockups/blob/master/LICENSE.txt)
  * Last Build: Tue Nov 14 2017 12:40:57
  */
+
+.card-wrapper {
+  max-width: 600px;
+  width: 100%;
+}
+
 .device-wrapper {
   max-width: 300px;
   width: 100%;
@@ -11114,10 +11120,6 @@ section.mission:before {
   max-width: 10rem;
 }
 /* banks & climate chaange feature */
-
-#banks{
-  padding-top: 2rem !important;
-}
 
 #banks .logos{
     width:auto;
