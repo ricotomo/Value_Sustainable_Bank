@@ -112,7 +112,7 @@
                                     <i class="bi bi-pencil-square"></i>
                                 </span>
                             </button>
-                            <p class="lead fw-normal text-muted mb-5">Coming winter 2022:</p>
+                            <p class="lead fw-normal text-muted mb-2 mt-2">Coming winter 2022</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
                                 <a class="me-lg-3 mb-4 mb-lg-0" ><img class="app-badge" src="{{ url_for('static', filename='/img/google-play-badge.svg')}}" alt="..." /></a>
                                 <a class="me-lg-3 mb-4 mb-lg-0"><img class="app-badge" src="{{ url_for('static', filename='img/app-store-badge.svg')}}" alt="..." /></a>
@@ -179,71 +179,18 @@
                     </div>
                     <div class="row align-content-center justify-content-center mx-auto no-gutters">
                         <div class="col-sm-12 col-md-4 mt-5 left-rounded  mx-auto no-gutters" id="climate-change-pics-row">
-                            <img id="climate-change-pics" class="w-100 left-rounded" src="{{ url_for('static', filename='img/RBC-Pic.jpg')}}" alt="Effects of climate change">
+                            <img id="climate-change-pics" class="w-100 rounded-2" src="{{ url_for('static', filename='img/RBC-Pic.jpg')}}" alt="Effects of climate change">
                         </div>
                         <div class="col-sm-8 col-md-8 mt-5 right-rounded mx-auto" id="banks-explanation">
                             <h3 id="banks-header">RBC is Canada's #1 Bank for Fossil Fuel Financing</h3>
                             <p id="banks-description">If you are a RBC customer, your money is funding climate change. RBC is the #1 fossil fuel financer in Canada and among the 60 largest worldwide. It has poured more than $3.8 trillion into oil, gas, and coal in the 5 years since the Paris Agreement contributing significantly to the climate crisis.</p>
                             <p>
-                                <a id="banks-link" href="https://bank.green/banks/rbc">Learn more</a>
+                                <a id="banks-link" href="https://bank.green/banks/rbc" style="color: #16CEC7">Learn more</a>
                             </p>
                         </div>
                     </div>
             </div>
         </div>
-        <!-- Financial services section-->
-        <!--https://www.chargebee.com/resources/glossaries/tiered-pricing-model-strategy/-->
-        <!-- https://www.renderforest.com/subscription -->
-        <section id="services">
-            <div class="container px-5">
-                <h1 class="text-center" style="color: #16CEC7">Our Services</h1>
-                <p class="text-center mb-5">Choose the plan that best fits your values.</p>
-                <div class="row gx-5 align-items-top">
-                <div class="col-md-4 col-sm-12 mb-5 mb-lg-0">
-                    <ul class="price">
-                        <div class="services-pic">
-                            <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/Sapling.PNG')}}" alt="Sapling">
-                        </div>
-                        <li class="header" style="background-color: #16CEC7">Free</li>
-                        <li class="grey">$ 0 / month</li>
-                        <li>A credit card that supports your values, every time you spend</li>
-                        <li>Option to round-up for even more impact</li>
-                        <li>Build credit, with smart payments to help boost your score</li>
-                        <li>Link your other banks to calculate a carbon footprint</li>
-                        <li>No hidden fees</li>
-                        <li id="last"> <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">Join the waitlist</button></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-12 mb-5 mb-lg-0">
-                    <ul class="price">
-                        <div class="services-pic">
-                            <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/tree.PNG')}}" alt="Tree">
-                        </div>
-                        <li class="header"">Divest</li>
-                        <li class="grey">$ 2 / month</li>
-                        <li>Includes everything from Free</li>
-                        <li>A bank account that doesn't fund fossil fuels</li>
-                        <li>Green Savings, Green Checking, Green Retirement</li>
-                        <li id="last" style="background-color: gray; color: white;">Coming Mar 2022</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 col-sm-12 mb-5 mb-lg-0">
-                    <ul class="price">
-                        <div class="services-pic">
-                            <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/Forest.PNG')}}" alt="Forest">
-                        </div>
-                        <li class="header">Impact</li>
-                        <li class="grey">$ 15 / month</li>
-                        <li>Includes everything from Divest</li>
-                        <li>Access to more high-impact projects</li>
-                        <li>Choose exactly what your money supports</li>
-                        <li id="last" style="background-color: gray; color: white;">Coming May 2022</li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-        </section>
         <!-- App features section-->
         <section id="features">
             <div class="container px-5">
@@ -298,11 +245,11 @@
                                         <stop class="gradient-end-color" offset="90%"></stop>
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
-                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
-                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                                <circle cx="50" cy="50" r="50"></circle></svg>
+                                <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                                    <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+                                </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
                             <div class="device-wrapper">
                                 <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                                     <div class="screen bg-black">
@@ -312,6 +259,71 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- Financial services section-->
+        <!--https://www.chargebee.com/resources/glossaries/tiered-pricing-model-strategy/-->
+        <!-- https://www.renderforest.com/subscription -->
+        <section id="services">
+            <div class="container px-5">
+                <h1 class="text-center" style="color: #16CEC7">Our Services</h1>
+                <p class="text-center mb-5">Choose the plan that best fits your values.</p>
+                <div class="row gx-5 align-items-top">
+                <div class="col-md-4 col-sm-12 mb-5 mb-lg-0">
+                    <ul class="price">
+                        <li class="header">
+                            <div class="services-pic">
+                                <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/Sapling.PNG')}}" alt="Sapling"> 
+                            </div>
+                            Free
+                        </li>
+                        <li class="grey">$ 0 / month</li>
+                        <li>A credit card that supports your values, every time you spend</li>
+                        <li>Option to round-up for even more impact</li>
+                        <li>Build credit, with smart payments to help boost your score</li>
+                        <li>Link your other banks to calculate a carbon footprint</li>
+                        <li>No hidden fees</li>
+                        <li id="last"> 
+                            <button class="btn btn-primary rounded-pill px-3 mb-2 mb-4" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                                <span class="d-flex align-items-center">
+                                    <span class="small">Join the Waitlist &nbsp</span>
+                                    <i class="bi bi-pencil-square"></i>
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-5 mb-lg-0">
+                    <ul class="price">
+                        <li class="header">
+                            <div class="services-pic">
+                                <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/tree.PNG')}}" alt="Tree">
+                            </div>
+                            Divest
+                        </li>
+                        <li class="grey">$ 2 / month</li>
+                        <li>Includes everything from Free</li>
+                        <li>A bank account that doesn't fund fossil fuels</li>
+                        <li>Green Savings, Green Checking, Green Retirement</li>
+                        <li id="last" style="background-color: gray; color: white;">Coming Mar 2022</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-5 mb-lg-0">
+                    <ul class="price">
+                        <li class="header">
+                            <div class="services-pic">
+                                <img id="climate-change-pics" class="w-100 rounded-top" src="{{url_for('static', filename='img/Forest.PNG')}}" alt="Forest">  
+                            </div>
+                            Impact
+                        </li>
+                        <li class="grey">$ 15 / month</li>
+                        <li>Includes everything from Divest</li>
+                        <li>Access to more high-impact projects</li>
+                        <li>Choose exactly what your money supports</li>
+                        <li id="last" style="background-color: gray; color: white;">Coming May 2022</li>
+                    </ul>
+                </div>
                 </div>
             </div>
         </section>

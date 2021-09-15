@@ -11429,9 +11429,10 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 .price .header {
-  background-color: #111;
   color: white;
   font-size: 25px;
+  font-weight: bold;
+  padding: 0px !important;
 }
 
 .price li {
@@ -11452,3 +11453,4 @@ footer a:hover, footer a:active, footer a:focus {
   background-color: #eee;
   font-size: 20px;
 }
+
