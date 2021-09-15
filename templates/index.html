@@ -89,7 +89,7 @@
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-12">
                         <div class="mb-5 mb-lg-0 text-lg-start">
-                            <section class="rotateText" id ="card">
+                            <section class="rotateText font-alt" id ="card">
                                 <h1 class="display-1 lh-1">A credit card that <br>
                                 <div class="slidingVertical">
                                     <span>plants trees.</span>
@@ -143,54 +143,6 @@
                 </div>
             </div>
         </header>
-        <div id="banks"> <!-- making this a section causes weird padding -->
-        <!-- Quote aside-->
-        <aside class="text-center bg-gradient-primary-to-secondary-banner mb-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">Is your bank funding climate change with your money?</div>
-                        <!-- <img src="{{ url_for('static', filename='img/tnw-logo.svg')}}" alt="..." style="height: 3rem" /> -->
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <!--Bank Comparison-->
-            <div class="container px-5">
-                <div class="row align-content-center justify-content-center mt-5 pt-5">
-                    <div class="hidden-sm-down col-md-1">
-                    </div>
-                    <div class="col-sm-4 col-md-2  mx-auto">
-                        <img class="logos grayscale" id="logo1" src="{{ url_for('static',filename='img/RBC-Logo.png')}}" alt="RBC logo">
-                    </div>
-                    <div class="col-sm-4 col-md-2 mx-auto">
-                        <img class="logos grayscale" id="logo2" src="{{ url_for('static',filename='img/CIBC-Logo.png')}}" alt="CIBC logo">
-                    </div>
-                    <div class="col-sm-4 col-md-2 mx-auto ">
-                        <img class="logos grayscale" id="logo3" src="{{ url_for('static',filename='img/Scotiabank-Logo.png')}}" alt="Scotiabank logo">
-                    </div>
-                    <div class="col-sm-4 col-md-2 mx-auto">
-                        <img class="logos grayscale" id="logo4" src="{{ url_for('static',filename='img/TD-Logo.png')}}" alt="TD logo">
-                    </div>
-                    <div class="col-sm-4 col-md-2 mx-auto">
-                        <img class="logos grayscale" id="logo5" src="{{ url_for('static',filename='img/BMO-Logo.png')}}" alt="BMO logo">
-                    </div>
-                    <div class="hidden-sm-down col-md-1 ">
-                    </div>
-                    <div class="row align-content-center justify-content-center mx-auto no-gutters">
-                        <div class="col-sm-12 col-md-4 mt-5 left-rounded  mx-auto no-gutters" id="climate-change-pics-row">
-                            <img id="climate-change-pics" class="w-100 rounded-2" src="{{ url_for('static', filename='img/RBC-Pic.jpg')}}" alt="Effects of climate change">
-                        </div>
-                        <div class="col-sm-8 col-md-8 mt-5 right-rounded mx-auto" id="banks-explanation">
-                            <h3 id="banks-header">RBC is Canada's #1 Bank for Fossil Fuel Financing</h3>
-                            <p id="banks-description">If you are a RBC customer, your money is funding climate change. RBC is the #1 fossil fuel financer in Canada and among the 60 largest worldwide. It has poured more than $3.8 trillion into oil, gas, and coal in the 5 years since the Paris Agreement contributing significantly to the climate crisis.</p>
-                            <p>
-                                <a id="banks-link" href="https://bank.green/banks/rbc" style="color: #16CEC7">Learn more</a>
-                            </p>
-                        </div>
-                    </div>
-            </div>
-        </div>
         <!-- App features section-->
         <section id="features">
             <div class="container px-5">
@@ -262,6 +214,55 @@
                 </div>
             </div>
         </section>
+        <div id="banks"> <!-- making this a section causes weird padding -->
+        <!-- Quote aside-->
+        <aside class="text-center bg-gradient-primary-to-secondary-banner mb-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="h2 fs-1 text-white mb-4">Is your bank funding climate change with your money?</div>
+                        <!-- <img src="{{ url_for('static', filename='img/tnw-logo.svg')}}" alt="..." style="height: 3rem" /> -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!--Bank Comparison-->
+            <div class="container px-5">
+                <div class="row align-content-center justify-content-center mt-5 pt-5">
+                    <div class="hidden-sm-down col-md-1">
+                    </div>
+                    <div class="col-sm-4 col-md-2  mx-auto">
+                        <img class="logos grayscale" id="logo1" src="{{ url_for('static',filename='img/RBC-Logo.png')}}" alt="RBC logo">
+                    </div>
+                    <div class="col-sm-4 col-md-2 mx-auto">
+                        <img class="logos grayscale" id="logo2" src="{{ url_for('static',filename='img/CIBC-Logo.png')}}" alt="CIBC logo">
+                    </div>
+                    <div class="col-sm-4 col-md-2 mx-auto ">
+                        <img class="logos grayscale" id="logo3" src="{{ url_for('static',filename='img/Scotiabank-Logo.png')}}" alt="Scotiabank logo">
+                    </div>
+                    <div class="col-sm-4 col-md-2 mx-auto">
+                        <img class="logos grayscale" id="logo4" src="{{ url_for('static',filename='img/TD-Logo.png')}}" alt="TD logo">
+                    </div>
+                    <div class="col-sm-4 col-md-2 mx-auto">
+                        <img class="logos grayscale" id="logo5" src="{{ url_for('static',filename='img/BMO-Logo.png')}}" alt="BMO logo">
+                    </div>
+                    <div class="hidden-sm-down col-md-1 ">
+                    </div>
+                    <div class="row align-content-center justify-content-center mx-auto no-gutters">
+                        <div class="col-sm-12 col-md-4 mt-5 left-rounded  mx-auto no-gutters" id="climate-change-pics-row">
+                            <img id="climate-change-pics" class="w-100 rounded-2" src="{{ url_for('static', filename='img/RBC-Pic.jpg')}}" alt="Effects of climate change">
+                        </div>
+                        <div class="col-sm-8 col-md-8 mt-5 right-rounded mx-auto" id="banks-explanation">
+                            <h3 id="banks-header">RBC is Canada's #1 Bank for Fossil Fuel Financing</h3>
+                            <p id="banks-description">If you are a RBC customer, your money is funding climate change. RBC is the #1 fossil fuel financer in Canada and among the 60 largest worldwide. It has poured more than $3.8 trillion into oil, gas, and coal in the 5 years since the Paris Agreement contributing significantly to the climate crisis.</p>
+                            <p>
+                                <a id="banks-link" href="https://bank.green/banks/rbc" style="color: #16CEC7">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    
         <!-- Financial services section-->
         <!--https://www.chargebee.com/resources/glossaries/tiered-pricing-model-strategy/-->
         <!-- https://www.renderforest.com/subscription -->
