@@ -335,6 +335,9 @@ button:focus:not(:focus-visible) {
   color: #ffff !important;
   background-color:var(--bs-primary) !important;
   border-color: var(--bs-primary) !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  opacity: 1
 }
 
 .btn-learn-more:hover {
