@@ -11076,6 +11076,19 @@ section.mission {
   width:100%;
   height:auto;
 }
+
+@media (max-width: 768px) {
+  section.mission {
+    position: relative;
+    padding: 7rem 0;
+    background-image:  url("img/overlay-black-60opacity.png"), url("https://source.unsplash.com/DeChBE0mpbk") !important;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:auto;
+  }
+}
+
 section.mission  .mission-content {
   position: relative;
   z-index: 1;
