@@ -11175,8 +11175,8 @@ section.mission:before {
 }
 
 #climate-change-pics-row{
-  padding-right: 0px !important;
-  padding-left: 0px !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
 }
 #banks-explanation{
 border: 1px solid #eee !important;
@@ -11184,7 +11184,12 @@ border: 1px solid #eee !important;
 transition: 0.3s;
 }
 
-#banks-explanation:hover + #climate-change-pics{
+#banks-div{
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+
+#banks-div:hover{
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 }
 
@@ -11193,13 +11198,15 @@ transition: 0.3s;
   #banks-description{
     display: none !important;
   }
+  #banks-div:hover{
+    box-shadow: none;
+  }
   #banks-explanation{
+    padding-left: calc(var(--bs-gutter-x) * .5);
     text-align: center !important;
     border: none !important;
   }
-  #banks-explanation:hover{
-    box-shadow: none;
-  }
+  
   #climate-change-pics{
     height:30vh;
     border-radius: 0.25rem !important;
@@ -11215,6 +11222,9 @@ transition: 0.3s;
   }
 }
 
+.all-rounded{
+  border-radius: 10px 10px 10px 10px;
+}
 .right-rounded{
   border-radius: 0px 10px 10px 0px;
 }
