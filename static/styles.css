@@ -11232,11 +11232,35 @@ transition: 0.3s;
 }
 
 /*Tiers & services feature*/
-.services-pic{
+
+.services-pic-free{
   object-fit: cover;
   background-position: center;
   background-size: cover;
+  background-image: url("img/Sapling.PNG");
   height: 25vh;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.services-pic-divest{
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/tree.PNG");
+  height: 25vh;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.services-pic-impact{
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/Forest.PNG");
+  height: 25vh;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
 }
 
 @media (min-width: 576px) {
@@ -11473,11 +11497,12 @@ footer a:hover, footer a:active, footer a:focus {
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
 
-.price .header {
+.price #header {
   color: white;
   font-size: 25px;
   font-weight: bold;
   padding: 0px !important;
+  position: relative;
 }
 
 .price li {
@@ -11499,3 +11524,15 @@ footer a:hover, footer a:active, footer a:focus {
   font-size: 20px;
 }
 
+.centered {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#gradient-text {
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent) !important;
+}
