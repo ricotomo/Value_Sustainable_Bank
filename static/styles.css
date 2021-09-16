@@ -11202,7 +11202,6 @@ transition: 0.3s;
     box-shadow: none;
   }
   #banks-explanation{
-    padding-left: calc(var(--bs-gutter-x) * .5);
     text-align: center !important;
     border: none !important;
   }
