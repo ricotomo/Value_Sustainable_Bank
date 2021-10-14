@@ -5,9 +5,9 @@ import os
 app = Flask(__name__)
 
 #airtable config
-base_key = 'apphtQSknY9Ue3L2j'
+base_key = 'XYZ'
 table_name = 'waiters'
-api_key="key5zzo3pttC12yCF"
+api_key="XYZ"
 endpoint=f'https://api.airtable.com/v0/{base_key}/{table_name}'
 
 def writeairtable(name, email, email_subscription, resident):
